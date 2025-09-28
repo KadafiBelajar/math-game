@@ -1,9 +1,10 @@
 {
-  "name": "math-game-monorepo",
+  "name": "math-game-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Dependencies for Vercel serverless functions",
+  "description": "Backend serverless function for Vercel",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "pg": "^8.16.3"
   }
