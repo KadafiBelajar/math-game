@@ -5,8 +5,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3001';
-    fetch(`${apiUrl}/api`)
+    fetch('/api')
       .then(res => res.json())
       .then(data => setData(data.message))
       .catch(err => console.error("Error fetching data: ", err));
